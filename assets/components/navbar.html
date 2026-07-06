@@ -1,0 +1,203 @@
+<!-- ═══════════════════════════════════════════════════════════
+     SCRS Site Navbar Component
+     Include on any page with:
+       <link rel="stylesheet" href="assets/css/style.css">
+       <link rel="stylesheet" href="assets/css/navbar.css">
+       <script src="assets/js/navbar-include.js" defer></script>
+     OR copy-paste this block directly into your <body>.
+     ═══════════════════════════════════════════════════════════ -->
+
+<div id="site-navbar">
+
+    <!-- ── TIER 1 : Utility Bar ────────────────────────── -->
+    <!-- <div class="nav-utility">
+    <div class="col-md-6 col-sm-6 text-left">
+      <input
+        type="search"
+        id="nav-search-input"
+        class="search-input"
+        placeholder="Search"
+        aria-label="Search SCRS"
+      >
+      <button class="search-btn" id="nav-search-btn">Search</button>
+    </div>
+    <div class="nav-utility-links">
+      <a href="#" id="link-scrs-fellow">SCRS Fellow</a>
+      <span class="nav-pipe">|</span>
+      <a href="#" id="link-scrs-collaborators">SCRS Collaborators</a>
+    </div>
+  </div> -->
+
+    <!-- ── TIER 2 : Brand / Identity Bar ───────────────── -->
+    <!-- <div class="nav-brand">
+
+        <div class="nav-brand-container">
+
+            <!-- <div class="nav-brand-left">
+
+                <a href="index.html" class="nav-logo-link">
+                    <img src="assets/images/logo.png" class="nav-logo">
+                </a>
+
+                <div class="nav-brand-text">
+                    <h1 class="nav-org-name">
+                        SIDDHI VINAYAK SHIKSHA SAMITI
+                    </h1>
+
+                    <p class="nav-org-tagline">
+                        Registered under the Societies Registration Act XXI of 1860
+                    </p>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="nav-brand-right">
+
+                <a href="#" class="nav-auth-btn">Login</a>
+
+                <a href="#" class="nav-auth-btn nav-auth-btn--filled">
+                    Register
+                </a>
+
+            </div> -->
+
+    </div> -->
+
+</div><!-- /#site-navbar -->
+
+<!-- ── TIER 3 : Main Navigation Links ─────────────────────────
+       NOTE: This element is OUTSIDE #site-navbar on purpose.
+       position:sticky only works when the element is NOT confined
+       to a short parent — being a sibling of #site-navbar lets it
+       stick across the full page scroll height.
+  ────────────────────────────────────────────────────────────── -->
+<nav class="nav-links-bar" id="nav-links-bar" aria-label="Primary Navigation">
+
+    <div class="nav-brand-left">
+
+                <a href="index.html" class="nav-logo-link">
+                    <img src="assets/images/logo.png" class="nav-logo" >
+                </a>
+
+                <div class="nav-brand-text">
+                    <h6 class="nav-org-name">
+                        SIDDHI VINAYAK SHIKSHA SAMITI
+                    </h6>
+
+                    <!-- <p class="nav-org-tagline">
+                        Registered under the Societies Registration Act XXI of 1860
+                    </p> -->
+                </div>
+
+            </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle Navigation" aria-expanded="false"
+        aria-controls="nav-links-list">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links-list" id="nav-links-list">
+
+        <li>
+            <a href="/index.html" class="nav-link" id="navl-home">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-house"></i></div>
+                <span>Home</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-about.html" class="nav-link" id="navl-about">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-circle-info"></i></div>
+                <span>About</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-scope.html" class="nav-link " id="navl-scope">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-crosshairs"></i></div>
+                <span>Scope</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-speakers.html" class="nav-link" id="navl-speakers">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-microphone"></i></div>
+                <span>Speakers</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-committee.html" class="nav-link" id="navl-committee">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-users"></i></div>
+                <span>Committee</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-special-sessions.html" class="nav-link" id="navl-special-sessions">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-star"></i></div>
+                <span>Special Sessions</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <!-- <li>
+            <a href="conferences.html" class="nav-link" id="navl-conferences">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-calendar-days"></i></div>
+                <span>Conferences</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li> -->
+
+        <li>
+            <a href="/icsm-afcea2026-submission.html" class="nav-link" id="navl-submission">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-paper-plane"></i></div>
+                <span>Submission</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-publication.html" class="nav-link" id="navl-publication">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-book-open"></i></div>
+                <span>Publication</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-registration.html" class="nav-link" id="navl-registration">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-clipboard-list"></i></div>
+                <span>Registration</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-awards.html" class="nav-link" id="navl-awards">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-trophy"></i></div>
+                <span>Awards & Recognitions</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="/icsm-afcea2026-contact.html" class="nav-link" id="navl-contact">
+                <div class="nav-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+                <span>Contact Us</span>
+                <i class="fa-solid fa-chevron-right nav-chevron"></i>
+            </a>
+        </li>
+
+
+    </ul>
+
+</nav>
